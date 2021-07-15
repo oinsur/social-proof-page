@@ -32,6 +32,7 @@ body {
   background-color: hsl(0, 0%, 100%);
   background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
   background-position: left 0px top 0px, right 0px bottom 0px;
+  background-size: contain;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -89,24 +90,57 @@ img {
 
 /*testimonials*/
 .reviews__testimonials {
-  margin: 15% auto;
+  margin: 15% auto 0;
 }
 
 .reviews__testimonials-item {
   background-color: hsl(300, 43%, 22%);
   border-radius: 10px;
   margin-bottom: 5%;
+  padding: 14% 8%;
+}
+
+.reviews__testimonials-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .reviews__testimonials-pic {
   border-radius: 50%;
+  width: 17%;
+}
+
+.reviews__testimonials-profile span {
+  margin-right: 35%;
+}
+.reviews__testimonials-title {
+  color: hsl(300, 24%, 96%);
+  font-weight: 500;
+}
+
+.reviews__testimonials-role {
+  color: hsl(333, 80%, 67%);
+  margin-top: 5%;
+  font-weight: 400;
+}
+
+.reviews__testimonials-post {
+  margin-top: 10%;
+  font-size: .9rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: hsl(300, 24%, 96%);
 }
 
 /*=============footer styles=============*/
 .attribution {
-  font-size: 11px;
+  font-size: 0.75rem;
   text-align: center;
+  margin: 4% auto;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
+  font-size: .75rem;
 }
