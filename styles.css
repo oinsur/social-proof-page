@@ -230,3 +230,47 @@ img {
     width: 98%;
   }
 }
+@media screen and (min-width: 1024px) {
+  .reviews__testimonials-pic {
+    width: 35%;
+  }
+  .reviews__testimonials-profile span {
+    width: 60%;
+  }
+  
+}
+@media screen and (min-width: 1440px) {
+  header {
+    width: 40%;
+    padding: 2% 0;
+  }
+  h1 {
+    width: 80%;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  header p {
+    margin: 0;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+  .reviews__ratings {
+    width: 60%;
+  }
+  li {
+    width: 70%;
+    margin: 2% 14% 0 0;
+  }
+  li p {
+    margin: 2% 0 2% 4%;
+    font-size: 1rem;
+  }
+  .reviews__testimonials-pic {
+    width: 17%;
+  }
+  .reviews__testimonials-profile span {
+    margin-right: 15%;
+    text-align: left;
+  }
+}
