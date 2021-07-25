@@ -23,7 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .page {
@@ -49,6 +49,7 @@ h1 {
   width: 80%;
   margin: 20% auto 5%;
   font-size: 2rem;
+  line-height: 2rem;
   color: hsl(300, 43%, 22%);
 }
 
@@ -67,7 +68,7 @@ header p {
 
 /*containers with ratings & star icons*/
 .reviews__ratings {
-  width: 100%;
+  width: 90%;
   margin: 5% auto;
 }
 
@@ -85,6 +86,7 @@ li p {
   margin: 2% 0
 }
 img {
+  width: 8%;
   padding: 1%;
 }
 
@@ -143,4 +145,88 @@ img {
 .attribution a {
   color: hsl(228, 45%, 44%);
   font-size: .75rem;
+}
+
+/*=============media queries=============*/
+@media screen and (min-width: 768px) {
+  .page {
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 5% 10%;
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-size: 36%, 82%;
+  }
+  header {
+    width: 50%;
+    text-align: left;
+    padding: 2% 0;
+  }
+  h1 {
+    margin: 0 0 3% 0;
+  }
+  header p {
+    margin: 0;
+    width: 95%;
+    font-size: .85rem;
+    line-height: 1.45rem;
+  }
+  .reviews__ratings {
+    width: 50%;
+    margin: 2% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  li {
+    padding: 2% 0% 2% 4%;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 2% 14% 5% 0;
+  }
+  li:nth-of-type(2) {
+    margin-right: 7%;
+  }
+  li:nth-of-type(3) {
+    margin-right: 0%;
+  }
+  img {
+    width: 6%;
+  }
+  li p {
+    margin: 2% 0 2% 4%;
+    font-size: .65rem;
+  }
+  .reviews {
+    width: 100%;
+  }
+  .reviews__testimonials {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 3% auto 0;
+  }
+  .reviews__testimonials-item {
+    width: 31%;
+    padding: 3% 2%;
+  }
+  .reviews__testimonials-item:nth-of-type(2) {
+    margin-top: 2%;
+  }
+  .reviews__testimonials-item:nth-of-type(3) {
+    margin-top: 6%;
+  }
+  .reviews__testimonials-profile span {
+    width: 40%;
+    text-align: right;
+    margin: 0;
+  }
+  .reviews__testimonials-pic {
+    width: 45%;
+  }
+  .reviews__testimonials-post {
+    width: 98%;
+  }
 }
